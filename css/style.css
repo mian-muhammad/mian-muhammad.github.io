@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(images/cubes.png);
+    color: #555;
+    background-color: #EDEDED;
+    font-family: 'Muli', sans-serif;
+}
+header {
+    background: rgba(51, 147, 175, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header h2 {
+    float: left;
+    margin-top: 15px;
+    color: #fff;
+    display: block;
+}
+header nav::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+ header nav ul {
+    list-style-type: none;
+}
+ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav ul li {
+    float: right;
+}
+header nav ul li a {
+    margin-left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 3.7em;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+header nav ul li a:hover {
+    background: #FF6F69;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1024px;
+}
+.wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-banner {
+    background: rgba(38, 163, 201, 0.62);
+    height: 450px;
+    text-align: center;
+    padding-top: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+.main-baner::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.main-banner h1 {
+    font-size: 70px;
+    color: #FF6F69;
+}
+.main-banner h2 {
+    font-size: 35px;
+    color: #fff;
+}
+.main-banner p {
+    font-size: 20px;
+    color: #fff;
+}
+.intro {
+    margin-top: 60px;
+}
+.intro h4 {
+    text-align: center;
+    font-size: 30px;
+}
+.center {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+.center::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.intro ul {
+    list-style-type: none;
+}
+.intro ul li {
+    float: left;
+}
+.intro ul li:nth-child(1) {
+    width: 20%;
+    margin-right: 5%;
+}
+.intro ul li:nth-child(2) {
+    width: 75%;
+}
+.intro ul li img {
+    width: 100%;
+    border-radius: 50%;
+}
+.intro ul li p {
+    line-height: 2em;
+    font-size: 18px;
+}
+.skills {
+    text-align: center;
+    margin: 60px 0;
+}
+.skills h4 {
+    font-size: 30px;
+}
+.skills ul {
+    list-style-type: none;
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+}
+.skills ul li {
+    line-height: 2;
+    font-size: 18px;
+}
+.portfolio {
+    background: rgba(38, 163, 201, 0.62);
+    margin: auto 0;
+    padding: 80px 0;
+    width: 100%;
+}
+.portfolio h4 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.portfolio ul {
+    list-style-type: none;
+}
+.portfolio ul li {
+    float: left;
+    width: 21%;
+    margin: 0 2%;
+}
+.portfolio ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.portfolio ul li img {
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.portfolio ul li img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    cursor: pointer;
+}
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 80px 0;
+    margin-top: 40px;
+}
+.contact h4 {
+    font-size: 30px;
+}
+.contact p {
+    font-size: 18px;
+    line-height: 1.8em;
+}
+/* Form Element */
+
+#form-wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+.contact ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul {
+    list-style-type: none;
+}
+.name ul li {
+    float: left;
+    width: 45%;
+}
+.name ul li:nth-child(2) {
+    margin-left: 10%;
+}
+.name ul li input {
+    width: 100%;
+}
+ul li input,
+ul li textarea {
+    height: 2em;
+    border: 1px solid #000;
+    font-size: 18px;
+    background-color: #EDEDED;
+}
+ul li input:focus,
+ul li textarea:focus {
+    border: 2px solid #3D97B2;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    
+    color: #FF6F69;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    
+    color: #FF6F69;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    
+    color: #FF6F69;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    
+    color: #FF6F69;
+}
+.subject ul li input,
+.textarea ul li textarea {
+    width: 100%;
+    margin: 0 auto;
+}
+.textarea ul li textarea {
+    height: 140px;
+}
+.contact form button {
+    background-color: #3493AF;
+    height: 50px;
+    width: 150px;
+    border: 0px;
+    font-size: 1.2em;
+    color: #fff;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.contact form button:hover {
+    background-color: #FF6F69;
+}
+footer {
+    background: rgba(38, 163, 201, 0.62);
+    padding: 10px 0;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+    font-size: 20px;
+}
+/* Font Awesome */
+
+footer ul {
+    list-style-type: none;
+    padding: 0 25.5%;
+}
+footer ul li {
+    float: left;
+    width: 30%;
+    margin: 0 1.6%;
+}
+footer .icon .fa {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: 3px solid #EDEDED;
+    border-radius: 50%;
+}
+footer .icon .fa:hover {
+    background-color: #EDEDED;
+    border: 3px solid #FF6F69;
+    border-radius: 50%;
+}
+footer .fa:hover {
+    color: #FF6F69;
+}
+footer .fa {
+    color: #EDEDED;
+    padding: 10px;
+}
+#copyright {
+    font-size: 12px;
+    margin-top: 10px;
+}
+span {
+    color: #FF6F69;
+}
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+    .main-banner p {
+        margin: 0 30px;
+    }
+    .main-banner h1 {
+        font-size: 50px;
+        color: #FF6F69;
+    }
+    #form-wrapper {
+        width: 100%;
+    }
+    .name ul li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .name ul li:nth-child(2) {
+        margin: 20px auto 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro ul li {
+        float: none;
+        width: 100% !important;
+    }
+    .intro ul li:nth-child(2) {
+        margin-top: 50px;
+    }
+    .name ul li {
+        float: none;
+        width: 100%;
+    }
+    .portfolio ul li {
+        float: left;
+        width: 45%;
+        margin: 2% 2.5%;
+    }
+}
