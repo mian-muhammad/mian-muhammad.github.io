@@ -359,3 +359,23 @@ span {
         margin: 2% 2.5%;
     }
 }
+
+@media screen and (max-width: 492px){
+    header h2 {
+        float: none;
+        text-align: center;
+    }
+    header nav ul li {
+        float: none;
+        display: inline;
+        font-size: 14px;
+    }
+    header nav ul li a {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 492px){
+    header nav ul li a {
+        width: 90px;
+    }
+}
