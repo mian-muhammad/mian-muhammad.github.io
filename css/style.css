@@ -167,6 +167,7 @@ header nav ul li a:hover {
 }
 .portfolio ul li img {
     width: 100%;
+    height: 300px;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
